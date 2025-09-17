@@ -5,8 +5,8 @@ print("Which arithmetic function would you like to use?\n" \
     "\n1 : Addition\n" \
     "2 : Subtraction\n" \
     "3 : Multiplication\n" \
-    "4 : Division\n"
-    "5 : Power\n"
+    "4 : Division\n" \
+    "5 : Power\n" \
     "6 : Square Root\n" \
     "7 : QUIT\n" \
     "8 : Function List")
@@ -48,8 +48,8 @@ while True:
         print("\n1 : Addition\n" \
     "2 : Subtraction\n" \
     "3 : Multiplication\n" \
-    "4 : Division\n"
-    "5 : Power\n"
+    "4 : Division\n" \
+    "5 : Power\n" \
     "6 : Square Root\n" \
     "7 : QUIT\n" \
     "8 : Function List\n")
