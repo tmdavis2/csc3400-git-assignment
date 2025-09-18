@@ -11,6 +11,23 @@ print("Which arithmetic function would you like to use?\n" \
     "7 : QUIT\n" \
     "8 : Function List")
 
+def get_number():
+    while True:
+        try:
+            user_input = input("\nEnter a number: ").strip()
+
+            if not user_input:
+                print("\nPlease enter a value. Try again")
+                continue
+
+            return float(user_input)
+        except ValueError:
+            print("\nPlease enter a numeric value")
+        except KeyboardInterrupt:
+            print("Exiting")
+            return None
+        
+
 while True:
     
     function = int(input("Enter Function: "))
@@ -18,27 +35,48 @@ while True:
     
     #additon
     if function == 1:
-        answer = add()
+        num1 = get_number()
+        num2 = get_number()
+        answer = add(num1, num2)
         print("\nAnswer: ", answer, "\n")
     #subtraction
     elif function == 2:
-        answer = subtract()
+        num1 = get_number()
+        num2 = get_number()
+        answer = subtract(num1, num2)
         print("\nAnswer: ", answer, "\n")
     #multiplication
     elif function == 3:
-        answer = multiply()
+        num1 = get_number()
+        num2 = get_number()
+        answer = multiply(num1, num2)
         print("\nAnswer: ", answer, "\n")
     #division
     elif function == 4:
-        answer = divide()
+        num1 = get_number()
+        while True:
+            num2 = get_number()
+            if num2 != 0:
+                break
+            else:
+                print("Invalid input, try again\n")
+        answer = divide(num1, num2)
         print("\nAnswer: ", answer, "\n")
     #power
     elif function == 5:
-        answer = power()
+        num1 = get_number()
+        num2 = get_number()
+        answer = power(num1, num2)
         print("\nAnswer: ", answer, "\n")
     #sqaure root
     elif function == 6:
-        answer = square_root()
+        while True:
+            num1 = get_number()
+            if num1 >= 0:
+                break
+            else:
+                print("Invalid input, try again\n")
+        answer = square_root(num1)
         print("\nAnswer: ", answer, "\n")
     #quit
     elif function == 7:
