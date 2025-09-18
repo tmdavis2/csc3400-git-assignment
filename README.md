@@ -1,4 +1,4 @@
-# My Software Engineering Project
+# Our Software engineering project 
 
 Trevor Davis 1292807
 
