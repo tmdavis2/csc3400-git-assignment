@@ -2,8 +2,8 @@ import math
 #this contains main mathematical operations
    
 # comment
-def add(num1, num2):
-    return num1 + num2 
+def add(c, d):
+    return c + d
 
 def subtract(num1, num2):
     return num1 - num2 
