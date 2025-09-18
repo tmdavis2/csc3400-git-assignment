@@ -1,4 +1,4 @@
-#Our csc3400 software engineering project 44444
+#Our csc3400 software engineering project 2
 
 Trevor Davis 1292807
 
