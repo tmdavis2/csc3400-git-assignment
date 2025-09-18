@@ -1,4 +1,4 @@
-# My Software Engineering Project
+# csc3400 git-assignment
 
 Trevor Davis 1292807
 
