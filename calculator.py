@@ -1,46 +1,21 @@
 import math
-
-
-def add():
-    num1 = int(input("Please enter a number:"))
-    num2 = int(input("Please enter another number:"))
+   
+def add(num1, num2):
     return num1 + num2 
 
-def subtract():
-    num1 = int(input("Please enter a number:"))
-    num2 = int(input("Please enter another number:"))
+def subtract(num1, num2):
     return num1 - num2 
 
-def multiply():
-    num1 = int(input("Please enter a number:"))
-    num2 = int(input("Please enter another number:"))
+def multiply(num1, num2):
     return num1 * num2 
 
-def divide():
-    while True:
-        num1 = int(input("Please enter a number:"))
-        num2 = int(input("Please enter another number:"))
-        if num2 != 0:
-            break
-        else:
-            print("Invalid input, try again\n")
-
+def divide(num1, num2):
     return num1 / num2
     
 
-def power():
-    num1 = int(input("Please enter a number:"))
-    num2 = int(input("Please enter another number:"))
-    
+def power(num1, num2):
     return num1 ** num2
 
-def square_root():
-    while True:
-        num1 = int(input("Please enter a number:"))
-        if num1 >= 0:
-            break
-        else:
-            print("Invalid input, try again\n")
-
+def square_root(num1):
     return math.sqrt(num1)
 
