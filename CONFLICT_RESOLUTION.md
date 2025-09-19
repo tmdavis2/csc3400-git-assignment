@@ -1,4 +1,4 @@
-#Conflict Resolution 
+# Conflict Resolution 
 
 ## Setup conflict
 - Creating conflicts withing original repository and clone
